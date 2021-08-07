@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Screen Recorder</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="screen recorder your computer" >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+  </head>
+  <body class="content">
+  <div style="display: flex;align-items:center; justify-content: center;"> <h1>⚡Screen Recorder<span id="status"></span></h1></div> 
+
+    <video></video>
+
+    <button id="startBtn" class="button is-primary">Start</button>
+    <button id="stopBtn" class="button is-warning">Stop</button>
+
+    <hr />
+
+    <button id="videoSelectBtn" class="button is-text">
+      Choose a Video Source
+    </button>
+    <br/>
+    <div class="buttons" style="display: flex;align-items: center;justify-content:center">
+      <button data-href="https://sairam-blog.firebaseapp.com/about" id="bloglink"  class="button is-primary">Check out My portfolio</button>
+      <button data-href="https://github.com/signatureratings" id="gitlink"  class="button is-primary">Check out My Github Account</button>
+    </div>
+  </body>
+</html>
